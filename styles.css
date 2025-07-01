@@ -12,12 +12,12 @@ body {
 
 header {
     justify-content: center;
-    padding: 5px 20px;
     text-align: center;
-    background-color: rgb(98, 131, 120);
+    background-color: #658C11;
 }
 
 #area-titulo {
+    padding: 5px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -33,14 +33,27 @@ header {
     flex-grow: 1;
 }
 
+
 #navbar>ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    margin: 0px;
+    padding: 20px;
+    background-color: #4F6F04;
 }
 
 #navbar>ul>li>a {
     text-decoration: none;
+    font-weight: 500;
+}
+
+#navbar>ul>li>a:visited {
+    color: black;
+}
+
+#navbar>ul>li>a:hover {
+    text-decoration: underline;
 }
 
 h2 {
@@ -71,10 +84,13 @@ section {
 /*Configurações específicas para cada section e seus componentes*/
 section#inicio {
     background-color: antiquewhite;
+    background-image: url("images/Mirante2-1920w.webp");
+    height: 600px;
+    background-size: cover;
 }
 
 section#objetivos {
-    background-color: #8b704e;
+    background-color: #4F6F04;
     
 }
 
@@ -83,11 +99,11 @@ section#objetivos {
 }
 
 section#impacto {
-    background-color: rgb(167, 137, 115);
+    background-color: #658C11;
 }
 
 section#acoes {
-    background-color: rgb(129, 150, 108);
+    background-color: #4F6F04;
 }
 
 #seja-parceiro-form {
@@ -110,7 +126,7 @@ section#acoes {
 }
 
 footer {
-    background-color: rgb(170, 170, 170);
+    background-color: #658C11;
     margin: 0;
     padding: 20px;
     display: flex;
