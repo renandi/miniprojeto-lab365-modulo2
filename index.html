@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <header>
-      
-    <div id="area-titulo">
-        <img id="header-logo" src="images/j-letter-with-green-leaves.jpg" alt="Letra J verde com uma folha no topo" />
+      <div id="area-titulo">
+        <img
+          id="header-logo"
+          src="images/j-letter-with-green-leaves.jpg"
+          alt="Letra J verde com uma folha no topo"
+        />
         <h1 id="titulo-pagina">Joinville Ecológica</h1>
       </div>
 
@@ -23,13 +25,15 @@
           <li><a href="#acoes">Ações</a></li>
         </ul>
       </nav>
-
     </header>
 
     <main>
       <section id="inicio">
         <h2>Gestão eficiente de resíduos e consumo consciente</h2>
-        <h3>Veja as ações praticadas na cidade e como você pode contribuir para a melhoria da preservação ambiental</h3>
+        <h3>
+          Veja as ações praticadas na cidade e como você pode contribuir para a
+          melhoria da preservação ambiental
+        </h3>
         <!-- <img src="https://picsum.photos/id/522/600/800" alt="" /> -->
       </section>
 
@@ -41,8 +45,8 @@
         </p>
 
         <div id="ods-container">
-            <img class="ods-img" src="images/ODS-11.svg" alt="">
-            <img class="ods-img" src="images/ODS-12.svg" alt="">
+          <img class="ods-img" src="images/ODS-11.svg" alt="" />
+          <img class="ods-img" src="images/ODS-12.svg" alt="" />
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,34 +78,115 @@
           <li>Seja Parceiro (Ex.: 02 desta lista)</li>
         </ul>
         <form id="seja-parceiro-form" method="POST" action="">
-            <h4>Seja parceiro</h4>
-            <label for="name">Nome</label>
-            <input type="text" name="name">
-            
-            <label for="phone">Telefone</label>
-            <input type="text" name="phone">
-            
-            <button id="submit-btn" type="submit">Enviar</button>
+          <h4>Seja parceiro</h4>
+
+          <label for="nomeParceiro">Nome</label>
+          <input type="text" name="nomeParceiro" />
+
+          <label for="tipoParceiro">Tipo</label>
+          <select name="tipoParceiro" id="tipoParceiro">
+            <option value="eco">ECO</option>
+            <option value="coo">COO</option>
+            <option value="pev">PEV</option>
+          </select>
+
+          <label for="responsavelParceiro">Responsável</label>
+          <input type="text" name="responsavelParceiro" />
+
+          <label for="telResponsavel">Telefone</label>
+          <input type="text" name="telResponsavel" />
+
+          <label for="emailResponsavel">Email</label>
+          <input type="text" name="emailResponsavel" />
+
+          <label for="rua">Endereço</label>
+          <input type="text" name="rua" />
+
+          <label for="numero">Número</label>
+          <input type="text" name="numero" />
+
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" />
+
+          <h4>Tipos de resíduos</h4>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="papel" id="papel" />
+            <label class="checkbox-residuos-label" for="papel">Papel</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="plastico" id="plastico" />
+            <label class="checkbox-residuos-label" for="plastico"
+              >Plástico</label
+            >
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="vidro" id="vidro" />
+            <label class="checkbox-residuos-label" for="vidro">Vidro</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="metal" id="metal" />
+            <label class="checkbox-residuos-label" for="metal">Metal</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="oleoCozinha" id="oleo" />
+            <label class="checkbox-residuos-label" for="oleoCozinha"
+              >Óleo de cozinha</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="pilhaBateria" id="pilhaBateria" />
+            <label class="checkbox-residuos-label" for="pilhaBateria"
+              >Pilhas e baterias</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="eletronico" id="eletronico" />
+            <label class="checkbox-residuos-label" for="eletronico"
+              >Eletrônicos</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="roupa" id="roupa" />
+            <label class="checkbox-residuos-label" for="roupa">Roupas</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="outros" id="outros" />
+            <label class="checkbox-residuos-label" for="outros">Outros</label>
+          </div>
+
+          <!--  Tipos de resíduos aceitos
+Checkbox com as opções: Papel, Plástico, Vidro, Metal, Óleo de cozinha, Pilhas e baterias, Eletrônicos, Roupas, Outros
+
+Botão Enviar -->
+          <button id="submit-btn" type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
     <footer>
-        <div>
-            <p>Feito por:</p>
-            <ul>
-                <li>Jennifer</li>
-                <li>Jose</li>
-                <li>Marcos Vinicius</li>
-                <li>Renan Nandi</li>
-            </ul>
-        </div>
-        <a href="https://brasil.un.org/pt-br/sdgs">Objetivos de desenvolvimento sustentável da ONU</a>
-        <div id="footer-logos-container">
-            <img src="images/logo-lab365.png" height="50px" alt="Logo do Lab365">
-            <img src="images/marca_senai.png" height="50px" alt="Logo do SENAI">
-            <img src="images/logo-prefeitura-joinville.png" height="50px" alt="">
-        </div>
+      <div>
+        <p>Feito por:</p>
+        <ul>
+          <li>Jennifer</li>
+          <li>Jose</li>
+          <li>Marcos Vinicius</li>
+          <li>Renan Nandi</li>
+        </ul>
+      </div>
+      <a href="https://brasil.un.org/pt-br/sdgs"
+        >Objetivos de desenvolvimento sustentável da ONU</a
+      >
+      <div id="footer-logos-container">
+        <img src="images/logo-lab365.png" height="50px" alt="Logo do Lab365" />
+        <img src="images/marca_senai.png" height="50px" alt="Logo do SENAI" />
+        <img src="images/logo-prefeitura-joinville.png" height="50px" alt="" />
+      </div>
     </footer>
   </body>
 </html>
