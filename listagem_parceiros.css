@@ -26,6 +26,7 @@ h1 {
     gap: 20px;
     padding: 50px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
