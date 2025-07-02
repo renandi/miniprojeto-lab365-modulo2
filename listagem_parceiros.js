@@ -30,7 +30,8 @@ function createCard(obj) {
   bairroText.innerText = obj.bairro;
 
   var dataInclusaoText = document.createElement("p");
-  dataInclusaoText.innerText = obj.dataCriacao;
+  var date = obj.dataCriacao.split("-")[2].split("T")[0]+"/"+obj.dataCriacao.split("-")[1]+"/"+obj.dataCriacao.split("-")[0];
+  dataInclusaoText.innerText = "Data de cadastro: " + date;
 
   card.appendChild(avatar);
   card.appendChild(img);
