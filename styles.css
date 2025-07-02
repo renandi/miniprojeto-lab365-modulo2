@@ -92,7 +92,7 @@ section#inicio {
 
 section#objetivos {
     background-color: #4F6F04;
-    
+
 }
 
 .ods-img {
@@ -113,7 +113,8 @@ section#acoes {
     padding: 0 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
+    background-color: #6d970a;
 }
 
 #seja-parceiro-form>h4 {
@@ -122,8 +123,22 @@ section#acoes {
     margin: 10px auto;
 }
 
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    /* grid-column: 1/3; */
+}
+
+.checkbox-residuos-label {
+    text-align: left;
+    margin: 0;
+}
+
 #seja-parceiro-form>button {
     grid-column: 1/3;
+    height: 40px;
 }
 
 footer {
