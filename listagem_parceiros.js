@@ -9,7 +9,7 @@ function createCard(obj) {
 
   var img = document.createElement("img");
 
-  switch (obj.tipoParceiro) {
+  switch (obj.tipoParceiro.toUpperCase()) {
     case "ECO":
       img.src = "images/ecoponto-pin.png";
       break;
