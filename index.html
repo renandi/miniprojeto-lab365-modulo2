@@ -80,8 +80,9 @@
         <form id="seja-parceiro-form" method="POST" action="">
           <h4>Seja parceiro</h4>
 
+          
           <label for="nomeParceiro">Nome</label>
-          <input type="text" name="nomeParceiro" />
+          <input type="text" name="nomeParceiro" required/>
 
           <label for="tipoParceiro">Tipo</label>
           <select name="tipoParceiro" id="tipoParceiro">
@@ -91,22 +92,22 @@
           </select>
 
           <label for="responsavelParceiro">Responsável</label>
-          <input type="text" name="responsavelParceiro" />
+          <input type="text" name="responsavelParceiro" required/>
 
           <label for="telResponsavel">Telefone</label>
-          <input type="text" name="telResponsavel" />
+          <input type="text" name="telResponsavel" required/>
 
           <label for="emailResponsavel">Email</label>
-          <input type="text" name="emailResponsavel" />
+          <input type="text" name="emailResponsavel" required/>
 
           <label for="rua">Endereço</label>
-          <input type="text" name="rua" />
+          <input type="text" name="rua" required/>
 
           <label for="numero">Número</label>
-          <input type="text" name="numero" />
+          <input type="number" name="numero" required/>
 
           <label for="bairro">Bairro</label>
-          <input type="text" name="bairro" />
+          <input type="text" name="bairro" required/>
 
           <h4>Tipos de resíduos</h4>
 
@@ -188,5 +189,6 @@ Botão Enviar -->
         <img src="images/logo-prefeitura-joinville.png" height="50px" alt="" />
       </div>
     </footer>
+    <script src="cadastro_parceiros.js"></script>
   </body>
 </html>

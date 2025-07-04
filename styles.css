@@ -1,3 +1,10 @@
+:root {
+  --primary-background: #607c3c;
+  --secondary-background: #58691b;
+  --midtone: #adbd61;
+  --accent: #b5e550;
+  --yellow: #ececa3;
+}
 
 * {
     /* Para que o padding seja incluído dentro do width.*/
@@ -13,7 +20,7 @@ body {
 header {
     justify-content: center;
     text-align: center;
-    background-color: #658C11;
+    /* background-color: #658C11; */
 }
 
 #area-titulo {
@@ -22,6 +29,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-image: linear-gradient(var(--secondary-background), var(--primary-background));
 }
 
 #header-logo {
@@ -40,7 +48,7 @@ header {
     justify-content: space-evenly;
     margin: 0px;
     padding: 20px;
-    background-color: #4F6F04;
+    background-color: var(--primary-background);
 }
 
 #navbar>ul>li>a {
@@ -92,6 +100,7 @@ section#inicio {
 
 section#objetivos {
     background-color: #4F6F04;
+    background-image: linear-gradient(var(--primary-background), var(--primary-background));
 
 }
 
@@ -101,20 +110,23 @@ section#objetivos {
 
 section#impacto {
     background-color: #658C11;
+    background-image: linear-gradient(var(--primary-background), var(--secondary-background));
 }
 
 section#acoes {
     background-color: #4F6F04;
+    background-image: linear-gradient(var(--secondary-background), var(--primary-background));
 }
 
 #seja-parceiro-form {
-    border: solid black 1px;
+    border: solid var(--midtone) 5px;
     border-radius: 10px;
     padding: 0 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background-color: #6d970a;
+    background-color: var(--midtone);
+    /* background-image: linear-gradient(var(--primary-background), var(--midtone)); */
 }
 
 #seja-parceiro-form>h4 {
@@ -142,10 +154,11 @@ section#acoes {
 }
 
 footer {
-    background-color: #658C11;
+    /* background-color: #658C11; */
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: linear-gradient(var(--primary-background), var(--secondary-background));
 }
