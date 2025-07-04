@@ -6,8 +6,8 @@ async function carregarParceiroDetalhado(id) {
     const card = document.getElementById('parceiro-card');
     card.innerHTML = `
       <div class="section" style="text-align: center;">
-        <img src="${parceiro.avatar || 'https://via.placeholder.com/100'}" alt="Avatar" class="avatar"/>
-        <h2>${parceiro.nome}</h2>
+        <img src="${parceiro.avatar || `https://picsum.photos/seed/${parceiro.id}/300/300`}" alt="Avatar" class="avatar"/>
+        <h2>${parceiro.nomeParceiro}</h2>
         <small>Data de cadastro: ${new Date(parceiro.dataCriacao).toLocaleDateString()}</small>
       </div>
 
@@ -42,4 +42,7 @@ async function carregarParceiroDetalhado(id) {
   }
 }
 
-carregarParceiroDetalhado(12);
+// carregarParceiroDetalhado(4);
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+if (id) carregarParceiroDetalhado(id);

@@ -33,11 +33,16 @@ function createCard(obj) {
   var date = obj.dataCriacao.split("-")[2].split("T")[0]+"/"+obj.dataCriacao.split("-")[1]+"/"+obj.dataCriacao.split("-")[0];
   dataInclusaoText.innerText = "Data de cadastro: " + date;
 
+  var maisInfoText = document.createElement("a");
+  maisInfoText.innerText = "Mais informações";
+  maisInfoText.href = `./detalhes_parceiros.html?id=${obj.id}`;
+
   card.appendChild(avatar);
   card.appendChild(img);
   card.appendChild(nomeText);
   card.appendChild(bairroText);
   card.appendChild(dataInclusaoText);
+  card.appendChild(maisInfoText);
 
   container.appendChild(card);
   card.classList.add("card");
