@@ -35,7 +35,7 @@ function createCard(obj) {
 
   var maisInfoText = document.createElement("a");
   maisInfoText.innerText = "Mais informações";
-  maisInfoText.href = `./detalhes_parceiros/${obj.id}`;
+  maisInfoText.href = `./detalhes_parceiros.html?id=${obj.id}`;
 
   card.appendChild(avatar);
   card.appendChild(img);
