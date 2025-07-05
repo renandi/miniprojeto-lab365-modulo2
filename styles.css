@@ -1,7 +1,7 @@
 :root {
-  --primary-background: #607c3c;
-  --secondary-background: #58691b;
-  --midtone: #adbd61;
+  --primary-background: #4d6d5d;
+  --secondary-background: #5e6e52;
+  --midtone: #7b9288;
   --accent: #b5e550;
   --yellow: #ececa3;
 }
@@ -29,7 +29,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(var(--secondary-background), var(--primary-background));
+    background-image: linear-gradient(var(--midtone), var(--primary-background));
 }
 
 #header-logo {
@@ -92,15 +92,15 @@ section {
 
 /*Configurações específicas para cada section e seus componentes*/
 section#inicio {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     background-image: url("images/Mirante2-1920w.webp");
     height: 600px;
     background-size: cover;
 }
 
 section#objetivos {
-    background-color: #4F6F04;
-    background-image: linear-gradient(var(--primary-background), var(--primary-background));
+    background-color: var(--midtone);
+    /* background-image: linear-gradient(var(--primary-background), white); */
 
 }
 
@@ -109,24 +109,25 @@ section#objetivos {
 }
 
 section#impacto {
-    background-color: #658C11;
-    background-image: linear-gradient(var(--primary-background), var(--secondary-background));
+    background-color: #5e6e52;
 }
 
 section#acoes {
-    background-color: #4F6F04;
-    background-image: linear-gradient(var(--secondary-background), var(--primary-background));
+    background-color: var(--midtone);
+    /* background-image: radial-gradient(white, var(--primary-background)); */
+
 }
 
 #seja-parceiro-form {
-    border: solid var(--midtone) 5px;
+    border: solid black 1px;
     border-radius: 10px;
     padding: 0 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background-color: var(--midtone);
-    /* background-image: linear-gradient(var(--primary-background), var(--midtone)); */
+    background-color:white ;
+    
+    backdrop-filter: blur(10px);
 }
 
 #seja-parceiro-form>h4 {
@@ -160,5 +161,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(var(--primary-background), var(--secondary-background));
+    background-color: var(--secondary-background);
+    /* background-image: linear-gradient(var(--primary-background), var(--primary-background)); */
 }

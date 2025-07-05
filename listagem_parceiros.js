@@ -5,7 +5,7 @@ function createCard(obj) {
   card.id = "card-" + obj.id;
 
   var avatar = document.createElement("p");
-  avatar.innerText = obj.tipoParceiro;
+  avatar.innerText = obj.tipoParceiro.toUpperCase();
 
   var img = document.createElement("img");
 
@@ -37,9 +37,9 @@ function createCard(obj) {
   maisInfoText.innerText = "Mais informações";
   maisInfoText.href = `./detalhes_parceiros.html?id=${obj.id}`;
 
-  card.appendChild(avatar);
-  card.appendChild(img);
   card.appendChild(nomeText);
+  card.appendChild(img);
+  card.appendChild(avatar);
   card.appendChild(bairroText);
   card.appendChild(dataInclusaoText);
   card.appendChild(maisInfoText);

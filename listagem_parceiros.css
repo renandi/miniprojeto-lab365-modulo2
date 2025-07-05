@@ -7,6 +7,8 @@ body {
     margin: 0;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url(""); */
+    color: green;
 }
 
 h1 {
@@ -31,7 +33,7 @@ h1 {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid #507237;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -41,6 +43,14 @@ h1 {
     align-items: center ;
 }
 
+.card:hover {
+     transform: scale(1.05);
+}
+
 .avatar {
     height: 64px;
+}
+
+a {
+    color: green;
 }
