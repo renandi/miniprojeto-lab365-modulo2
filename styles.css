@@ -174,13 +174,26 @@ section#acoes {
 }
 
 footer {
-    /* background-color: #658C11; */
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    /* background-color: var(--secondary-background); */
-    /* background-image: linear-gradient(var(--primary-background), var(--primary-background)); */
+}
+
+footer>a {
+    color: var(--text-color);
+}
+
+#footer-logos-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap:10px;
+    justify-items: center;
+}
+
+#footer-logos-container>img {
+    max-width: 150px;
+    height: auto;
 }
