@@ -26,13 +26,18 @@ body {
 }
 
 .section h3 {
-  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 1.1em;
   color: #444;
 }
 
+.section p {
+  margin-left: 15px;
+}
+
 .info {
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: bold;
 }
 

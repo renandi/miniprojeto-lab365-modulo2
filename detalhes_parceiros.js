@@ -29,12 +29,35 @@ async function carregarParceiroDetalhado(id) {
         <p><strong>Bairro:</strong> ${parceiro.bairro || '---'}</p>
       </div>
 
-      <div class="section">
-        <h3>Tipos de resíduos aceitos:</h3>
-        <ul class="residuos">
-         ${(parceiro.residuos || []).map(r => `<li>${r}</li>`).join('')}
-        </ul>
-      </div>
+<div class="section">
+  <h3>Tipos de resíduos aceitos:</h3>
+  <ul class="residuos">
+    ${
+      (() => {
+        const tiposResiduos = {
+          papel: 'Papel',
+          plastico: 'Plástico',
+          vidro: 'Vidro',
+          metal: 'Metal',
+          oleoCozinha: 'Óleo de Cozinha',
+          pilhaBateria: 'Pilha/Bateria',
+          eletronico: 'Eletrônico',
+          roupa: 'Roupa',
+          roupas: 'Roupas',
+          outros: 'Outros'
+        };
+
+        const aceitos = Object.entries(tiposResiduos)
+          .filter(([chave]) => parceiro[chave] === true)
+          .map(([_, nomeFormatado]) => `<li>${nomeFormatado}</li>`);
+
+        return aceitos.length > 0
+          ? aceitos.join('')
+          : '<li>Nenhum resíduo aceito</li>';
+      })()
+    }
+  </ul>
+</div>
     `;
   } catch (error) {
     document.getElementById('parceiro-card').innerHTML = '<p>Erro ao carregar dados do parceiro.</p>';
@@ -42,7 +65,7 @@ async function carregarParceiroDetalhado(id) {
   }
 }
 
-// carregarParceiroDetalhado(4);
-const params = new URLSearchParams(window.location.search);
-const id = params.get('id');
-if (id) carregarParceiroDetalhado(id);
+carregarParceiroDetalhado(26);
+//const params = new URLSearchParams(window.location.search);
+//const id = params.get('id');
+//if (id) carregarParceiroDetalhado(id);
