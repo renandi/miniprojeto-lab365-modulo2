@@ -21,5 +21,5 @@ document.getElementById("senha").addEventListener("input", () => {
 entrar.addEventListener('click', () => {
     const email = document.getElementById('email').value;
     localStorage.setItem('email', email);
-    window.location.href = 'listagem.html';
+    window.location = "./listagem_parceiros.html";
 });

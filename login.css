@@ -1,6 +1,11 @@
+:root  {
+  --midtone: #a4c5b7;  
+  --text-color: #1e6410;
+}
+
 body  {
   font-family: Arial, sans-serif;
-background-color: #4d6d5d;
+background-color: white;
 }
 
 .login {
@@ -27,7 +32,6 @@ background-color: #4d6d5d;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  color: #0c4204;
   
 }
 
@@ -35,7 +39,7 @@ background-color: #4d6d5d;
   display: block;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #4d6d5d;
+  background-color: var(--midtone);
   border: #0c4204;
 }
 
