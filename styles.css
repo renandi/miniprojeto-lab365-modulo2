@@ -31,6 +31,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-image: linear-gradient(var(--midtone), white);
 }
 
 #header-logo {
