@@ -40,20 +40,34 @@
       <section id="objetivos">
         <h2>Objetivos</h2>
         <p>
-          Esta página tem como objetivo apresentar as medidas sustentáveis
-          tomadas pela administração municipal.
+          Esta página tem como objetivo apresentar as medidas sustentáveis da
+          administração municipal e como os cidadãos podem ajudar, tendo como
+          diretrizes os objetivos sustentáveis da ONU:
         </p>
 
         <div id="ods-container">
           <img class="ods-img" src="images/ODS-11.svg" alt="" />
+
           <img class="ods-img" src="images/ODS-12.svg" alt="" />
+
+          <p>
+            O ODS 11 é crucial para o desenvolvimento sustentável, pois as
+            cidades são centros de atividade econômica, cultural e social, mas
+            também enfrentam desafios como desigualdade, pobreza, poluição e
+            vulnerabilidade a desastres. Ao tornar as cidades mais sustentáveis,
+            podemos melhorar a qualidade de vida de bilhões de pessoas e
+            construir um futuro mais justo e equitativo
+          </p>
+
+          <p>
+            O ODS 12 é fundamental para a construção de um futuro sustentável,
+            pois aborda diretamente um dos principais desafios da nossa era: a
+            forma como produzimos e consumimos. Atingir esse objetivo é crucial
+            para garantir a preservação dos recursos naturais, a proteção do
+            meio ambiente e a melhoria da qualidade de vida das presentes e
+            futuras gerações.
+          </p>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus reiciendis accusamus a neque totam rerum doloremque
-          voluptatibus cumque cum amet beatae nisi unde exercitationem iusto,
-          nulla soluta aperiam pariatur animi?
-        </p>
       </section>
 
       <section id="impacto">
@@ -69,20 +83,68 @@
       <section id="acoes">
         <h2>Ações</h2>
         <h3>
-          Explicação de algumas ações para que a população possa participar.
-          Como:
+          Algumas ações que podem ser tomadas pela população para contribuir com
+          o desenvolvimento sustentável da cidade
         </h3>
         <ul>
-          <li>Doe seus recicláveis para cooperativas locais</li>
-          <li>Participe de campanhas e eventos</li>
-          <li>Seja Parceiro (Ex.: 02 desta lista)</li>
+          <li>
+            Participar de eventos como
+            <a
+              href="https://www.even3.com.br/junho-verde-2025-secretaria-de-meio-ambiente-de-joinvillesc-sama-575221/"
+            >
+              Junho Verde</a
+            >
+            <p>
+              Evento gratuito, alusivo ao mês em que se comemora o dia mundial
+              do meio ambiente (05 de junho)
+            </p>
+          </li>
+
+          <li>
+            <a
+              href="https://www.joinville.sc.gov.br/servicos/como-fazer-compostagem/"
+              >Fazer compostagem</a
+            >
+            <p>
+              Um processo biológico de decomposição de matéria orgânica, como
+              restos de alimentos, folhagens, gravetos e outros resíduos
+              biodegradáveis. A compostagem é uma prática simples e eficiente
+              que contribui para a saúde do meio ambiente.
+            </p>
+          </li>
+
+          <li>
+            <a
+              href="https://www.joinville.sc.gov.br/servicos/destinar-residuos-reciclaveis-para-coleta/"
+              >Destinar resíduos recicláveis para coleta</a
+            >
+            <p>
+              Separar resíduos popularmente conhecidos como “lixo reciclável”
+              (papel, plástico, metal, vidro, isopor, óleo de cozinha etc.) para
+              recolhimento por meio de serviço rotineiro de coleta
+            </p>
+          </li>
+
+          <li>
+            <a
+              href="https://www.joinville.sc.gov.br/servicos/fazer-inscricao-no-programa-de-incentivo-ao-desenvolvimento-rural-sustentavel-de-joinville-juntos-pelo-campo/"
+              >Programa de Incentivo ao Desenvolvimento Rural Sustentável de
+              Joinville – Juntos pelo Campo</a
+            >
+            <p>
+              Serviços de mecanização agrícola e outros benefícios a produtores
+              rurais do Município de Joinville
+            </p>
+          </li>
+
+          <li>Doar recicláveis para cooperativas locais</li>
+          <li>Participar de outras campanhas e eventos</li>
         </ul>
         <form id="seja-parceiro-form" method="POST" action="">
           <h4>Seja parceiro</h4>
 
-          
           <label for="nomeParceiro">Nome</label>
-          <input type="text" name="nomeParceiro" required/>
+          <input type="text" name="nomeParceiro" required />
 
           <label for="tipoParceiro">Tipo</label>
           <select name="tipoParceiro" id="tipoParceiro">
@@ -92,22 +154,22 @@
           </select>
 
           <label for="responsavelParceiro">Responsável</label>
-          <input type="text" name="responsavelParceiro" required/>
+          <input type="text" name="responsavelParceiro" required />
 
           <label for="telResponsavel">Telefone</label>
-          <input type="text" name="telResponsavel" required/>
+          <input type="text" name="telResponsavel" required />
 
           <label for="emailResponsavel">Email</label>
-          <input type="text" name="emailResponsavel" required/>
+          <input type="text" name="emailResponsavel" required />
 
           <label for="rua">Endereço</label>
-          <input type="text" name="rua" required/>
+          <input type="text" name="rua" required />
 
           <label for="numero">Número</label>
-          <input type="number" name="numero" required/>
+          <input type="number" name="numero" required />
 
           <label for="bairro">Bairro</label>
-          <input type="text" name="bairro" required/>
+          <input type="text" name="bairro" required />
 
           <h4>Tipos de resíduos</h4>
 
@@ -136,19 +198,22 @@
           <div class="checkbox-group">
             <input type="checkbox" name="oleoCozinha" id="oleo" />
             <label class="checkbox-residuos-label" for="oleoCozinha"
-              >Óleo de cozinha</label>
+              >Óleo de cozinha</label
+            >
           </div>
 
           <div class="checkbox-group">
             <input type="checkbox" name="pilhaBateria" id="pilhaBateria" />
             <label class="checkbox-residuos-label" for="pilhaBateria"
-              >Pilhas e baterias</label>
+              >Pilhas e baterias</label
+            >
           </div>
 
           <div class="checkbox-group">
             <input type="checkbox" name="eletronico" id="eletronico" />
             <label class="checkbox-residuos-label" for="eletronico"
-              >Eletrônicos</label>
+              >Eletrônicos</label
+            >
           </div>
 
           <div class="checkbox-group">
@@ -161,10 +226,6 @@
             <label class="checkbox-residuos-label" for="outros">Outros</label>
           </div>
 
-          <!--  Tipos de resíduos aceitos
-Checkbox com as opções: Papel, Plástico, Vidro, Metal, Óleo de cozinha, Pilhas e baterias, Eletrônicos, Roupas, Outros
-
-Botão Enviar -->
           <button id="submit-btn" type="submit">Enviar</button>
         </form>
       </section>
@@ -174,7 +235,7 @@ Botão Enviar -->
       <div>
         <p>Feito por:</p>
         <ul>
-          <li>Jennifer</li>
+          <li>Jeniffer Caroline</li>
           <li>Jose</li>
           <li>Marcos Vinicius</li>
           <li>Renan Nandi</li>

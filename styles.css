@@ -103,6 +103,18 @@ section#objetivos {
 
 }
 
+#ods-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+#ods-container>p {
+    padding: 0 20px;
+}
+
 .ods-img {
     height: 200px;
 }
@@ -114,6 +126,16 @@ section#impacto {
 section#acoes {
     background-color: var(--midtone);
 }
+
+
+#acoes>ul>li>a{
+    color: #1e6410;
+}
+
+#acoes>ul>li>p {
+    padding-inline-start: 20px;
+}
+
 
 #seja-parceiro-form {
     border: solid black 1px;
