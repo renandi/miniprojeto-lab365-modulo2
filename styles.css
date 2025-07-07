@@ -1,9 +1,11 @@
 :root {
-  --primary-background: #4d6d5d;
-  --secondary-background: #5e6e52;
-  --midtone: #7b9288;
-  --accent: #b5e550;
-  --yellow: #ececa3;
+  /* --primary-background: #4d6d5d;
+  --secondary-background: #5e6e52; */
+  --primary-background: white;
+  --secondary-background: #1e6410;
+  --midtone: #a4c5b7;
+  
+  --text-color: #1e6410;
 }
 
 * {
@@ -15,12 +17,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
 }
 
 header {
     justify-content: center;
     text-align: center;
-    /* background-color: #658C11; */
 }
 
 #area-titulo {
@@ -29,7 +31,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(var(--midtone), var(--primary-background));
 }
 
 #header-logo {
@@ -92,7 +93,6 @@ section {
 
 /*Configurações específicas para cada section e seus componentes*/
 section#inicio {
-    /* background-color: antiquewhite; */
     background-image: url("images/Mirante2-1920w.webp");
     height: 600px;
     background-size: cover;
@@ -100,7 +100,6 @@ section#inicio {
 
 section#objetivos {
     background-color: var(--midtone);
-    /* background-image: linear-gradient(var(--primary-background), white); */
 
 }
 
@@ -109,13 +108,11 @@ section#objetivos {
 }
 
 section#impacto {
-    background-color: #5e6e52;
+    background-color: white;
 }
 
 section#acoes {
     background-color: var(--midtone);
-    /* background-image: radial-gradient(white, var(--primary-background)); */
-
 }
 
 #seja-parceiro-form {
@@ -125,7 +122,7 @@ section#acoes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background-color:white ;
+    background-color: white;
     
     backdrop-filter: blur(10px);
 }
@@ -161,6 +158,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--secondary-background);
+    background-color: white;
+    /* background-color: var(--secondary-background); */
     /* background-image: linear-gradient(var(--primary-background), var(--primary-background)); */
 }
