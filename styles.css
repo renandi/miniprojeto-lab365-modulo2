@@ -124,6 +124,13 @@ section#impacto {
     background-color: white;
 }
 
+.impactimg {
+    width: 20%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
 section#acoes {
     background-color: var(--midtone);
 }
