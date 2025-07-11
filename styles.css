@@ -5,10 +5,13 @@
   --secondary-background: #1e6410;
   --midtone: #a4c5b7;
 
+
   --text-color: #1e6410;
 }
 
 * {
+  /* Para que o padding seja incluído dentro do width.*/
+  box-sizing: border-box;
   /* Para que o padding seja incluído dentro do width.*/
   box-sizing: border-box;
 }
@@ -208,9 +211,10 @@ footer {
   gap: 20px;
 }
 
-
 footer > a {
   color: var(--text-color);
+  padding: 0px 20px ;
+  text-align: center;
 }
 
 #footer-logos-container {
