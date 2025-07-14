@@ -11,6 +11,7 @@ document
     const formData = new FormData(this);
 
     const data = {
+      dataCriacao: new Date().toISOString(),
       nomeParceiro: formData.get("nomeParceiro"),
       tipoParceiro: formData.get("tipoParceiro"),
       responsavelParceiro: formData.get("responsavelParceiro"),
