@@ -65,7 +65,7 @@ async function carregarParceiroDetalhado(id) {
   }
 }
 
-carregarParceiroDetalhado(26);
-//const params = new URLSearchParams(window.location.search);
-//const id = params.get('id');
-//if (id) carregarParceiroDetalhado(id);
+// carregarParceiroDetalhado(26);
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+if (id) carregarParceiroDetalhado(id);
